@@ -1,5 +1,4 @@
-module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/vuefood/'
-        : '/'
-}
+const {defineConfig} = require("vite");
+module.exports = defineConfig({
+    publicPath: '/vuefood/'
+})
